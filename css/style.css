@@ -1,0 +1,197 @@
+@font-face {
+  font-family: "roboto";
+  src: url("fontRoboto-Regular.ttf");
+}
+@font-face {
+  font-family: "rosario";
+  src: url("fontRosario-Italic-VariableFont_wght.ttf");
+}
+/* all element*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+
+/* end all element*/
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 1000vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*start header*/
+#header {
+  width: 68%;
+  height: auto;
+}
+#header .nav-bar {
+  height: 6rem;
+  background-color: #3498DB;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+#header .nav-bar h1 {
+  color: #f5f6fa;
+  font-size: 2.4rem;
+  padding: 2rem 2rem;
+  font-weight: 100;
+  font-family: "roboto";
+}
+#header .nav-bar i {
+  color: #f5f6fa;
+  font-size: 2rem;
+  padding: 1rem 1rem;
+  font-weight: 100;
+}
+#header .nav-image {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  height: 600px;
+  background-image: url("../image/hero.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#header .nav-image h1 {
+  color: #f5f6fa;
+  font-size: 4.2rem;
+  padding: 2rem 5rem;
+  font-weight: 100;
+  font-family: "rosario";
+  text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3);
+}
+#header .nav-image button {
+  width: 129px;
+  height: 40px;
+  color: #000000;
+  font-size: 2rem;
+  padding: 0rem 0rem;
+  font-weight: 100;
+  margin-left: 20rem;
+  border: none;
+  outline: none;
+  border-radius: 0px 20px;
+  font-family: "rosario";
+  box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+/*end header*/
+/*start main part*/
+#main {
+  width: 68%;
+  height: auto;
+  background-color: #f5f6fa;
+}
+#main .title {
+  color: #485460;
+  font-size: 3rem;
+  padding: 1rem 0;
+  font-weight: 100;
+  font-family: "roboto";
+  text-align: center;
+}
+#main .image-list {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 1rem auto;
+}
+#main .image-list .image-list-item {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  list-style: none;
+  background-position: center;
+  background-size: cover;
+}
+#main .image-list .image-list-item span {
+  color: #f5f6fa;
+  font-size: 2.4rem;
+  padding: 2rem 1rem;
+  font-weight: 600;
+  font-family: "rosario";
+}
+#main .picture {
+  width: 85%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  background-image: url("../image/6.jpg"), linear-gradient(rgba(0, 0, 0, 0.8), rgba(100, 100, 100, 0.9));
+  background-position: center;
+  background-size: cover;
+  margin: 1.5rem auto;
+}
+#main .picture h1 {
+  color: #a4b0be;
+  font-size: 3rem;
+  padding: 0.3rem 2rem;
+  font-weight: 900;
+  font-size: "rosario";
+}
+#main .picture span {
+  color: #a4b0be;
+  font-size: 1rem;
+  padding: 0.3rem 2rem;
+  font-weight: 900;
+  font-size: "rosario";
+}
+#main .picture button {
+  width: 75px;
+  height: 30px;
+  margin: 1rem 1.5rem;
+  color: #1e272e;
+  font-size: 1rem;
+  padding: 0 0;
+  font-weight: 100;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+}
+#main .card-container {
+  width: 95%;
+  height: auto;
+  margin: 5px auto;
+}
+#main .card-container .card-title {
+  color: #000000;
+  font-size: 1.5rem;
+  padding: 2rem 2rem;
+  font-weight: 100;
+  font-family: "roboto";
+}
+#main .card-container .card-list {
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+#main .card-container .card-list .card-list-item {
+  list-style: none;
+  width: 310px;
+  height: 200px;
+  background-image: url("../image/6.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+/*end main part*/
+
+/*# sourceMappingURL=style.css.map */
