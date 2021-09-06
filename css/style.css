@@ -1,11 +1,13 @@
 @font-face {
   font-family: "roboto";
-  src: url("fontRoboto-Regular.ttf");
+  src: url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
 }
 @font-face {
   font-family: "rosario";
-  src: url("fontRosario-Italic-VariableFont_wght.ttf");
+  src: url("https://fonts.googleapis.com/css2?family=Rosario:ital,wght@1,300&display=swap");
 }
+/*start minix*/
+/*end minix*/
 /* all element*/
 * {
   margin: 0;
@@ -45,7 +47,7 @@ body {
   font-size: 2.4rem;
   padding: 2rem 2rem;
   font-weight: 100;
-  font-family: "roboto";
+  font-family: "rosario";
 }
 #header .nav-bar i {
   color: #f5f6fa;
@@ -70,7 +72,7 @@ body {
   font-size: 4.2rem;
   padding: 2rem 5rem;
   font-weight: 100;
-  font-family: "rosario";
+  font-family: "roboto";
   text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3);
 }
 #header .nav-image button {
@@ -84,7 +86,7 @@ body {
   border: none;
   outline: none;
   border-radius: 0px 20px;
-  font-family: "rosario";
+  font-family: "roboto";
   box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3);
 }
 
@@ -92,15 +94,15 @@ body {
 /*start main part*/
 #main {
   width: 68%;
-  height: auto;
-  background-color: #f5f6fa;
+  height: 1070px;
+  background-color: #eccc68;
 }
 #main .title {
   color: #485460;
   font-size: 3rem;
   padding: 1rem 0;
   font-weight: 100;
-  font-family: "roboto";
+  font-family: "rosario";
   text-align: center;
 }
 #main .image-list {
@@ -125,7 +127,7 @@ body {
   font-size: 2.4rem;
   padding: 2rem 1rem;
   font-weight: 600;
-  font-family: "rosario";
+  font-family: "roboto";
 }
 #main .picture {
   width: 85%;
@@ -134,7 +136,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
-  background-image: url("../image/6.jpg"), linear-gradient(rgba(0, 0, 0, 0.8), rgba(100, 100, 100, 0.9));
+  background-image: url("../image/b.jpg"), linear-gradient(rgba(0, 0, 0, 0.8), rgba(100, 100, 100, 0.9));
   background-position: center;
   background-size: cover;
   margin: 1.5rem auto;
@@ -144,19 +146,20 @@ body {
   font-size: 3rem;
   padding: 0.3rem 2rem;
   font-weight: 900;
-  font-size: "rosario";
+  font-size: "roboto";
 }
 #main .picture span {
   color: #a4b0be;
   font-size: 1rem;
   padding: 0.3rem 2rem;
   font-weight: 900;
-  font-size: "rosario";
+  font-size: "roboto";
 }
 #main .picture button {
   width: 75px;
   height: 30px;
   margin: 1rem 1.5rem;
+  font-family: roboto;
   color: #1e272e;
   font-size: 1rem;
   padding: 0 0;
@@ -164,34 +167,691 @@ body {
   border: none;
   outline: none;
   border-radius: 15px;
+  cursor: pointer;
 }
 #main .card-container {
-  width: 95%;
-  height: auto;
+  width: 96%;
+  height: 400px;
   margin: 5px auto;
+  background-color: #eccc68;
 }
 #main .card-container .card-title {
-  color: #000000;
-  font-size: 1.5rem;
+  color: #a4b0be;
+  font-size: 3rem;
   padding: 2rem 2rem;
   font-weight: 100;
-  font-family: "roboto";
+  font-family: "rosario";
 }
 #main .card-container .card-list {
   width: inherit;
+  height: auto;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
 }
 #main .card-container .card-list .card-list-item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
   list-style: none;
   width: 310px;
-  height: 200px;
-  background-image: url("../image/6.jpg");
-  background-position: center;
-  background-size: cover;
+  height: 330px;
+  border: 1px solid #2C3A47;
+  position: relative;
+}
+#main .card-container .card-list .card-list-item .card-like {
+  width: 28px;
+  height: 28px;
+  border-radius: 100px;
+  position: absolute;
+  background-color: #f5f6fa;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+#main .card-container .card-list .card-list-item .card-like:hover {
+  background-color: #eb4d4b;
+}
+#main .card-container .card-list .card-list-item .card-like i {
+  line-height: 28px;
+  display: block;
+  margin: 2px 3px;
+  font-size: 20px;
+}
+#main .card-container .card-list .card-list-item .card-img {
+  width: 309px;
+  height: 250px;
+  border-bottom: 1px solid #2C3A47;
+  margin: 0 0;
+}
+#main .card-container .card-list .card-list-item .card-txt {
+  width: 309;
+  height: 77px;
+  text-align: center;
+  background-color: #f6e58d;
+  font-size: 1.5rem;
+  padding: 1rem;
+  font-family: "roboto";
 }
 
 /*end main part*/
+/*start footer part*/
+#footer {
+  width: 68%;
+  height: 120px;
+  background-color: #eccc68;
+  margin-top: 2rem;
+}
+#footer .list-container {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px 0;
+  border-top: 1px solid #3498DB;
+}
+#footer .list-container .link-list {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: start;
+}
+#footer .list-container .link-list .link-list-item {
+  width: auto;
+  font-size: 1.7rem;
+  font-family: "rosario";
+  font-weight: bold;
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+#footer .list-container .social-link-list {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: start;
+}
+#footer .list-container .social-link-list .social-link-item {
+  width: auto;
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-left: 2px;
+  font-size: 1.8rem;
+}
+#footer .list-container .social-link-list .social-link-item a {
+  text-decoration: none;
+  color: #3498DB;
+  font-family: "rosario";
+}
+#footer .list-container .social-link-list .social-link-item i {
+  font-size: 2rem;
+  color: black;
+  cursor: pointer;
+}
+#footer .footer-txt {
+  font-family: "rosario";
+  font-size: 1.25rem;
+}
+
+/*end footer part*/
+@media only screen and (max-width: 1500px) {
+  /*start header*/
+  #header {
+    width: 68%;
+    height: auto;
+  }
+  #header .nav-bar {
+    height: 6rem;
+    background-color: #3498DB;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #header .nav-bar h1 {
+    color: #f5f6fa;
+    font-size: 2.4rem;
+    padding: 2rem 2rem;
+    font-weight: 100;
+    font-family: "rosario";
+  }
+  #header .nav-bar i {
+    color: #f5f6fa;
+    font-size: 2rem;
+    padding: 1rem 1rem;
+    font-weight: 100;
+  }
+  #header .nav-image {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+    background-image: url("../image/hero.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #header .nav-image h1 {
+    color: #f5f6fa;
+    font-size: 3rem;
+    padding: 2rem 5rem;
+    font-weight: 100;
+    font-family: "roboto";
+    text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3);
+  }
+  #header .nav-image button {
+    width: 129px;
+    height: 40px;
+    color: #000000;
+    font-size: 2rem;
+    padding: 0rem 0rem;
+    font-weight: 100;
+    margin-left: 20rem;
+    border: none;
+    outline: none;
+    border-radius: 0px 20px;
+    font-family: "roboto";
+    box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3);
+  }
+
+  /*end header*/
+  /*start main part*/
+  #main {
+    width: 68%;
+    height: 1070px;
+    background-color: #eccc68;
+  }
+  #main .title {
+    color: #485460;
+    font-size: 3rem;
+    padding: 1rem 0;
+    font-weight: 100;
+    font-family: "rosario";
+    text-align: center;
+  }
+  #main .image-list {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1rem auto;
+  }
+  #main .image-list .image-list-item {
+    width: 200px;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    list-style: none;
+    background-position: center;
+    background-size: cover;
+  }
+  #main .image-list .image-list-item span {
+    color: #f5f6fa;
+    font-size: 2.4rem;
+    padding: 2rem 1rem;
+    font-weight: 600;
+    font-family: "roboto";
+  }
+  #main .picture {
+    width: 85%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    background-image: url("../image/b.jpg"), linear-gradient(rgba(0, 0, 0, 0.8), rgba(100, 100, 100, 0.9));
+    background-position: center;
+    background-size: cover;
+    margin: 1.5rem auto;
+  }
+  #main .picture h1 {
+    color: #a4b0be;
+    font-size: 3rem;
+    padding: 0.3rem 2rem;
+    font-weight: 900;
+    font-size: "roboto";
+  }
+  #main .picture span {
+    color: #a4b0be;
+    font-size: 1rem;
+    padding: 0.3rem 2rem;
+    font-weight: 900;
+    font-size: "roboto";
+  }
+  #main .picture button {
+    width: 75px;
+    height: 30px;
+    margin: 1rem 1.5rem;
+    font-family: roboto;
+    color: #1e272e;
+    font-size: 1rem;
+    padding: 0 0;
+    font-weight: 100;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  #main .card-container {
+    width: 96%;
+    height: 400px;
+    margin: 5px auto;
+    background-color: #eccc68;
+  }
+  #main .card-container .card-title {
+    color: #a4b0be;
+    font-size: 3rem;
+    padding: 2rem 2rem;
+    font-weight: 100;
+    font-family: "rosario";
+  }
+  #main .card-container .card-list {
+    width: inherit;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  #main .card-container .card-list .card-list-item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    list-style: none;
+    width: 240px;
+    height: 330px;
+    border: 1px solid #2C3A47;
+    position: relative;
+  }
+  #main .card-container .card-list .card-list-item .card-like {
+    width: 28px;
+    height: 28px;
+    border-radius: 100px;
+    position: absolute;
+    background-color: #f5f6fa;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+    transition: all 1s ease;
+  }
+  #main .card-container .card-list .card-list-item .card-like:hover {
+    background-color: #eb4d4b;
+  }
+  #main .card-container .card-list .card-list-item .card-like i {
+    line-height: 28px;
+    display: block;
+    margin: 2px 3px;
+    font-size: 20px;
+  }
+  #main .card-container .card-list .card-list-item .card-img {
+    width: 239px;
+    height: 250px;
+    border-bottom: 1px solid #2C3A47;
+    margin: 0 0;
+  }
+  #main .card-container .card-list .card-list-item .card-txt {
+    height: 77px;
+    text-align: center;
+    background-color: #f6e58d;
+    font-size: 1.5rem;
+    padding: 1rem;
+    font-family: "roboto";
+  }
+
+  /*end main part*/
+  /*start footer part*/
+  #footer {
+    width: 68%;
+    height: 120px;
+    background-color: #eccc68;
+    margin-top: 2rem;
+  }
+  #footer .list-container {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0;
+    border-top: 1px solid #3498DB;
+  }
+  #footer .list-container .link-list {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: start;
+  }
+  #footer .list-container .link-list .link-list-item {
+    width: auto;
+    font-size: 1.7rem;
+    font-family: "rosario";
+    font-weight: bold;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  #footer .list-container .social-link-list {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: start;
+  }
+  #footer .list-container .social-link-list .social-link-item {
+    width: auto;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 2px;
+    font-size: 1.8rem;
+  }
+  #footer .list-container .social-link-list .social-link-item a {
+    text-decoration: none;
+    color: #3498DB;
+    font-size: 1.5rem;
+    font-family: "rosario";
+  }
+  #footer .list-container .social-link-list .social-link-item i {
+    font-size: 2rem;
+    color: black;
+    cursor: pointer;
+  }
+  #footer .footer-txt {
+    font-family: "rosario";
+    font-size: 1.25rem;
+  }
+
+  /*end footer part*/
+}
+@media only screen and (max-width: 1162px) {
+  /*start header*/
+  #header {
+    width: 68%;
+    height: auto;
+  }
+  #header .nav-bar {
+    height: 6rem;
+    background-color: #3498DB;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #header .nav-bar h1 {
+    color: #f5f6fa;
+    font-size: 2.4rem;
+    padding: 2rem 2rem;
+    font-weight: 100;
+    font-family: "rosario";
+  }
+  #header .nav-bar i {
+    color: #f5f6fa;
+    font-size: 2rem;
+    padding: 1rem 1rem;
+    font-weight: 100;
+  }
+  #header .nav-image {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+    background-image: url("../image/hero.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #header .nav-image h1 {
+    color: #f5f6fa;
+    font-size: 3rem;
+    padding: 2rem 5rem;
+    font-weight: 100;
+    font-family: "roboto";
+    text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3);
+  }
+  #header .nav-image button {
+    width: 129px;
+    height: 40px;
+    color: #000000;
+    font-size: 2rem;
+    padding: 0rem 0rem;
+    font-weight: 100;
+    margin-left: 12rem;
+    border: none;
+    outline: none;
+    border-radius: 0px 20px;
+    font-family: "roboto";
+    box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3);
+  }
+
+  /*end header*/
+  /*start main part*/
+  #main {
+    width: 68%;
+    height: 2350px;
+    background-color: #eccc68;
+  }
+  #main .title {
+    color: #485460;
+    font-size: 3rem;
+    padding: 1rem 0;
+    font-weight: 100;
+    font-family: "rosario";
+    text-align: center;
+  }
+  #main .image-list {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1rem auto;
+  }
+  #main .image-list .image-list-item {
+    width: 200px;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    list-style: none;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 10px;
+  }
+  #main .image-list .image-list-item span {
+    color: #f5f6fa;
+    font-size: 2.4rem;
+    padding: 2rem 1rem;
+    font-weight: 600;
+    font-family: "roboto";
+  }
+  #main .picture {
+    width: 85%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    background-image: url("../image/b.jpg"), linear-gradient(rgba(0, 0, 0, 0.8), rgba(100, 100, 100, 0.9));
+    background-position: center;
+    background-size: cover;
+    margin: 1.5rem auto;
+  }
+  #main .picture h1 {
+    color: #a4b0be;
+    font-size: 3rem;
+    padding: 0.3rem 2rem;
+    font-weight: 900;
+    font-size: "roboto";
+  }
+  #main .picture span {
+    color: #a4b0be;
+    font-size: 1rem;
+    padding: 0.3rem 2rem;
+    font-weight: 900;
+    font-size: "roboto";
+  }
+  #main .picture button {
+    width: 75px;
+    height: 30px;
+    margin: 1rem 1.5rem;
+    font-family: roboto;
+    color: #1e272e;
+    font-size: 1rem;
+    padding: 0 0;
+    font-weight: 100;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  #main .card-container {
+    width: 96%;
+    height: 400px;
+    margin: 5px auto;
+    background-color: #eccc68;
+  }
+  #main .card-container .card-title {
+    color: #a4b0be;
+    font-size: 3rem;
+    padding: 2rem 2rem;
+    font-weight: 100;
+    font-family: "rosario";
+  }
+  #main .card-container .card-list {
+    width: inherit;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20px auto;
+  }
+  #main .card-container .card-list .card-list-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    list-style: none;
+    width: 240px;
+    height: 330px;
+    border: 1px solid #2C3A47;
+    position: relative;
+  }
+  #main .card-container .card-list .card-list-item .card-like {
+    width: 28px;
+    height: 28px;
+    border-radius: 100px;
+    position: absolute;
+    background-color: #f5f6fa;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+    transition: all 1s ease;
+  }
+  #main .card-container .card-list .card-list-item .card-like:hover {
+    background-color: #eb4d4b;
+  }
+  #main .card-container .card-list .card-list-item .card-like i {
+    line-height: 28px;
+    display: block;
+    margin: 2px 3px;
+    font-size: 20px;
+  }
+  #main .card-container .card-list .card-list-item .card-img {
+    width: 239px;
+    height: 250px;
+    border-bottom: 1px solid #2C3A47;
+    margin: 0 0;
+  }
+  #main .card-container .card-list .card-list-item .card-txt {
+    height: 77px;
+    text-align: center;
+    background-color: #f6e58d;
+    font-size: 1.5rem;
+    padding: 1rem;
+    font-family: "roboto";
+  }
+
+  /*end main part*/
+  /*start footer part*/
+  #footer {
+    width: 68%;
+    height: 200px;
+    background-color: #eccc68;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #footer .list-container {
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid #3498DB;
+  }
+  #footer .list-container .link-list {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: start;
+  }
+  #footer .list-container .link-list .link-list-item {
+    width: auto;
+    font-size: 1.7rem;
+    font-family: "rosario";
+    font-weight: bold;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  #footer .list-container .social-link-list {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: start;
+  }
+  #footer .list-container .social-link-list .social-link-item {
+    width: auto;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 2px;
+    font-size: 1.8rem;
+  }
+  #footer .list-container .social-link-list .social-link-item a {
+    text-decoration: none;
+    color: #3498DB;
+    font-size: 1.5rem;
+    font-family: "rosario";
+  }
+  #footer .list-container .social-link-list .social-link-item i {
+    font-size: 2rem;
+    color: black;
+    cursor: pointer;
+  }
+  #footer .footer-txt {
+    font-family: "rosario";
+    font-size: 1.25rem;
+  }
+
+  /*end footer part*/
+}
 
 /*# sourceMappingURL=style.css.map */
